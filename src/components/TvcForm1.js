@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class TvcForm1 extends Component {
+class LDQVForm1 extends Component {
     constructor(props){
         super(props);
         this.state = {
