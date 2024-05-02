@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-class TvcForm2 extends Component {
+class LDQVForm2 extends Component {
     // 1. 
     constructor(props){
         super(props);
         this.state = {
-            course:"Tvc-HTML5"
+            course:"LDQV-HTML5"
         }
     }
     //3. hàm xủ lý sự kiện
@@ -28,10 +28,10 @@ class TvcForm2 extends Component {
                     <label>Course</label>
                     <select value={this.state.course} 
                             onChange={this.tvcHandleChange}>
-                        <option value={"Tvc-HTML5"}>Tvc-HTML5</option>
-                        <option value={"Tvc-CSS3"}>Tvc-CSS3</option>
-                        <option value={"Tvc-JS"}>Tvc-JS</option>
-                        <option value={"Tvc-RJ"}>Tvc-ReactJs</option>
+                        <option value={"LDQV-HTML5"}>Tvc-HTML5</option>
+                        <option value={"LDQV-CSS3"}>Tvc-CSS3</option>
+                        <option value={"LDQV-JS"}>Tvc-JS</option>
+                        <option value={"LDQV-RJ"}>Tvc-ReactJs</option>
                     </select>
                     <input type='submit' value={"Submit"} />
                 </form>
@@ -40,4 +40,4 @@ class TvcForm2 extends Component {
     }
 }
 
-export default TvcForm2;
+export default LDQVForm2;
