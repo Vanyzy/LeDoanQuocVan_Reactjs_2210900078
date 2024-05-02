@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 
-class TvcForm3 extends Component {
+class LDQVForm3 extends Component {
     constructor(props){
         super(props);
         this.state = {
             studentName:"Lê Đoàn Quốc Văn",
             age:"20",
-            course:"Tvc-HTML5",
+            course:"LDQV-HTML5",
             gender:true
         }
     }
 
-    tvcHandleChange = (event)=>{
+    LDQVHandleChange = (event)=>{
         let name=event.target.name;
         let value=event.target.value;
         this.setState({
@@ -20,7 +20,7 @@ class TvcForm3 extends Component {
         console.log(name, value);
     }
 
-    tvcHandleSubmit = (event)=>{
+    LDQVHandleSubmit = (event)=>{
         event.preventDefault();
         console.log(this.state);
         // Chuyển dữ liệu lên App
@@ -34,15 +34,15 @@ class TvcForm3 extends Component {
                         <label>Student Name:</label>
                         <input  name='studentName'
                                 value={this.state.studentName} 
-                                onChange={this.tvcHandleChange}/>
+                                onChange={this.LDQVHandleChange}/>
                     </div>
                     <div>
                         <label>Age:</label>
                         <input  name='age' 
                                 value={this.state.age} 
-                                onChange={this.tvcHandleChange}/>
+                                onChange={this.LDQVHandleChange}/>
                     </div>
-                    <div onChange={this.tvcHandleChange }>
+                    <div onChange={this.LDQVHandleChange }>
                         <label>Gender:</label>
                         <input type='radio' id='rdNam' name='gender' value={true} 
                             defaultChecked={this.state.gender===true} /> 
@@ -55,11 +55,11 @@ class TvcForm3 extends Component {
                         <label>Course:</label>
                         <select name='course'
                                 value={this.state.course} 
-                                onChange={this.tvcHandleChange}>
-                            <option value={"Tvc-HTML5"}>Tvc-HTML5</option>
-                            <option value={"Tvc-CSS3"}>Tvc-CSS3</option>
-                            <option value={"Tvc-JS"}>Tvc-JS</option>
-                            <option value={"Tvc-RJ"}>Tvc-ReactJs</option>
+                                onChange={this.LDQVHandleChange}>
+                            <option value={"LDQV-HTML5"}>LDQV-HTML5</option>
+                            <option value={"LDQV-CSS3"}>LDQV-CSS3</option>
+                            <option value={"LDQV-JS"}>LDQV-JS</option>
+                            <option value={"LDQV-RJ"}>LDQV-ReactJs</option>
                         </select>
                     </div>
 
@@ -70,4 +70,4 @@ class TvcForm3 extends Component {
     }
 }
 
-export default TvcForm3;
+export default LDQVForm3;
