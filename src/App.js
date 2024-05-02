@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import TvcForm1 from './components/TvcForm1';
-import TvcForm2 from './components/TvcForm2';
-import TvcForm3 from './components/TvcForm3';
+import LDQVForm1 from './components/TvcForm1';
+import LDQVForm2 from './components/TvcForm2';
+import LDQVForm3 from './components/TvcForm3';
 
 class App extends Component {
 
